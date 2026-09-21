@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arben Soluções | Soluções para Interiores</title>
-
   <meta
     name="description"
-    content="Arben Soluções: cortinas, persianas, automação, papel de parede, piso vinílico e toldos sob medida."
-  >
+    content="Arben Soluções: cortinas sob medida, persianas, automação, papel de parede, piso vinílico e toldos em São Paulo."
+  />
 
   <style>
     :root {
@@ -20,59 +18,51 @@
       --gold: #b78642;
       --text: #443a33;
       --muted: #756b63;
-      --line: rgba(103, 71, 43, .14);
-      --shadow: 0 18px 42px rgba(53, 34, 19, .10);
+      --line: rgba(103, 71, 43, 0.14);
+      --shadow: 0 18px 42px rgba(53, 34, 19, 0.1);
       --radius: 22px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      color: var(--text);
       background: var(--cream);
+      color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
     }
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
     .container {
       width: min(1180px, calc(100% - 32px));
       margin: 0 auto;
     }
-
     .topbar {
       padding: 10px 0;
-      color: white;
       background: var(--dark);
-      font-size: .85rem;
+      color: white;
+      font-size: 0.85rem;
     }
-
     .topbar-content {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 16px;
       flex-wrap: wrap;
     }
-
-    .topbar a {
+    .topbar-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .topbar-links a {
       color: #efd19a;
       font-weight: bold;
+    }
+    .topbar-links a:hover {
+      color: #f5cc88;
     }
 
     .brand-header {
@@ -80,14 +70,12 @@
       background: var(--cream);
       border-bottom: 1px solid var(--line);
     }
-
     .brand-container {
       width: min(1400px, 100%);
-      margin: auto;
+      margin: 0 auto;
       display: flex;
       justify-content: center;
     }
-
     .logo-arben {
       width: min(1200px, 100%);
       height: auto;
@@ -97,26 +85,23 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(255, 253, 251, .95);
+      background: rgba(255, 253, 251, 0.95);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(10px);
     }
-
     .navigation-content {
-      min-height: 62px;
+      min-height: 64px;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 24px;
       flex-wrap: wrap;
     }
-
     .navigation a {
       color: var(--brown);
-      font-size: .88rem;
-      font-weight: bold;
+      font-size: 0.88rem;
+      font-weight: 700;
     }
-
     .navigation a:hover {
       color: var(--gold);
     }
@@ -124,33 +109,29 @@
     .section {
       padding: 88px 0;
     }
-
     .light {
       background: var(--light);
     }
 
     .heading {
-      max-width: 800px;
-      margin-bottom: 38px;
+      max-width: 820px;
+      margin-bottom: 36px;
     }
-
     .heading small {
       display: block;
       margin-bottom: 10px;
       color: var(--gold);
-      font-size: .8rem;
-      font-weight: bold;
-      letter-spacing: .13em;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
       text-transform: uppercase;
     }
-
     .heading h2 {
       margin: 0 0 15px;
       color: var(--dark);
       font-size: clamp(2rem, 4vw, 3.1rem);
       line-height: 1.15;
     }
-
     .heading p {
       margin: 0;
       color: var(--muted);
@@ -162,45 +143,39 @@
       align-items: center;
       color: white;
       background:
-        linear-gradient(90deg, rgba(28, 19, 12, .84), rgba(28, 19, 12, .25)),
+        linear-gradient(90deg, rgba(28, 19, 12, 0.84), rgba(28, 19, 12, 0.25)),
         url("assets/cortinas-sala.jpg") center / cover no-repeat;
     }
-
     .hero-content {
       max-width: 700px;
       padding: 80px 0;
     }
-
     .hero-label {
       display: inline-block;
       margin-bottom: 20px;
       padding: 8px 14px;
-      border: 1px solid rgba(255,255,255,.3);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 999px;
       color: #efd39c;
-      font-size: .78rem;
-      letter-spacing: .12em;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
     }
-
     .hero h1 {
       margin: 0 0 20px;
       font-size: clamp(2.5rem, 6vw, 5rem);
       line-height: 1.05;
     }
-
     .hero p {
       margin: 0 0 28px;
-      color: rgba(255,255,255,.9);
+      color: rgba(255, 255, 255, 0.9);
       font-size: 1.1rem;
     }
-
     .buttons {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
     }
-
     .btn {
       display: inline-flex;
       justify-content: center;
@@ -210,28 +185,26 @@
       border-radius: 999px;
       color: white;
       background: linear-gradient(135deg, #d0a562, var(--brown));
-      box-shadow: 0 12px 25px rgba(103,71,43,.2);
+      box-shadow: 0 12px 25px rgba(103, 71, 43, 0.2);
       cursor: pointer;
-      font-weight: bold;
-      transition: .25s;
+      font-weight: 700;
+      transition: 0.25s ease;
     }
-
     .btn:hover {
       transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(103, 71, 43, 0.28);
     }
-
     .btn-outline {
       background: transparent;
-      border: 1px solid rgba(255,255,255,.7);
+      border: 1px solid rgba(255, 255, 255, 0.7);
       box-shadow: none;
     }
 
     .grid-2 {
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
+      grid-template-columns: 1.1fr 0.9fr;
       gap: 28px;
     }
-
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -245,14 +218,12 @@
       background: white;
       box-shadow: var(--shadow);
     }
-
     .card h3 {
       margin: 0 0 14px;
       color: var(--dark);
       font-size: 1.55rem;
       line-height: 1.2;
     }
-
     .card p {
       color: var(--muted);
     }
@@ -263,7 +234,6 @@
       gap: 14px;
       margin-top: 25px;
     }
-
     .stat {
       padding: 18px 10px;
       border: 1px solid var(--line);
@@ -271,16 +241,14 @@
       background: var(--cream);
       text-align: center;
     }
-
     .stat strong {
       display: block;
       color: var(--gold);
       font-size: 1.6rem;
     }
-
     .stat span {
       color: var(--muted);
-      font-size: .85rem;
+      font-size: 0.85rem;
     }
 
     .service-card {
@@ -288,9 +256,8 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: white;
-      box-shadow: 0 10px 28px rgba(53,34,19,.05);
+      box-shadow: 0 10px 28px rgba(53, 34, 19, 0.05);
     }
-
     .service-icon {
       width: 56px;
       height: 56px;
@@ -301,13 +268,11 @@
       background: linear-gradient(135deg, #edd5a9, #faf2e5);
       font-size: 1.7rem;
     }
-
     .service-card h3 {
       margin: 0 0 9px;
       color: var(--dark);
       font-size: 1.22rem;
     }
-
     .service-card p {
       margin: 0;
       color: var(--muted);
@@ -317,7 +282,6 @@
       max-width: 920px;
       margin-bottom: 40px;
     }
-
     .intro p {
       color: var(--muted);
       font-size: 1.06rem;
@@ -329,20 +293,17 @@
       gap: 44px;
       align-items: center;
     }
-
     .product-image {
       overflow: hidden;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-
     .product-image img {
       width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
-      transition: .4s;
+      transition: 0.4s ease;
     }
-
     .product-image:hover img,
     .gallery-card:hover img {
       transform: scale(1.03);
@@ -353,7 +314,6 @@
       color: var(--dark);
       font-size: 1.7rem;
     }
-
     .product-copy p {
       color: var(--muted);
     }
@@ -365,25 +325,21 @@
       padding: 0;
       list-style: none;
     }
-
     .feature-list li {
       position: relative;
       padding-left: 28px;
     }
-
     .feature-list li::before {
       content: "✦";
       position: absolute;
       left: 0;
       color: var(--gold);
-      font-weight: bold;
+      font-weight: 700;
     }
-
     .feature-list strong {
       display: block;
       color: var(--dark);
     }
-
     .feature-list span {
       display: block;
       color: var(--muted);
@@ -395,31 +351,26 @@
       gap: 22px;
       margin-top: 50px;
     }
-
     .gallery-card {
       overflow: hidden;
       border-radius: var(--radius);
       background: white;
       box-shadow: var(--shadow);
     }
-
     .gallery-card img {
       width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
-      transition: .4s;
+      transition: 0.4s ease;
     }
-
     .gallery-card div {
       padding: 17px 19px;
     }
-
     .gallery-card h3 {
       margin: 0 0 5px;
       color: var(--dark);
       font-size: 1.12rem;
     }
-
     .gallery-card p {
       margin: 0;
       color: var(--muted);
@@ -432,30 +383,25 @@
       border-radius: var(--radius);
       background: linear-gradient(135deg, #faf3eb, #eee0d1);
     }
-
     .info-box h3 {
       margin: 0 0 20px;
       color: var(--dark);
       font-size: 1.6rem;
     }
-
     .info-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
-
     .info-item {
       padding: 20px;
       border-radius: 16px;
-      background: rgba(255,255,255,.7);
+      background: rgba(255, 255, 255, 0.72);
     }
-
     .info-item h4 {
       margin: 0 0 7px;
       color: var(--dark);
     }
-
     .info-item p {
       margin: 0;
       color: var(--muted);
@@ -471,28 +417,23 @@
       color: white;
       background: var(--dark);
     }
-
     .contact h2 {
       color: white;
     }
-
     .contact-text {
-      color: rgba(255,255,255,.8);
+      color: rgba(255, 255, 255, 0.8);
     }
-
     .contact-item {
       display: flex;
       gap: 16px;
       align-items: flex-start;
       margin: 20px 0;
     }
-
     .contact-label {
       min-width: 105px;
       color: #e6c98f;
-      font-weight: bold;
+      font-weight: 700;
     }
-
     .contact-item a,
     .contact-item span {
       color: white;
@@ -508,33 +449,29 @@
       display: grid;
       gap: 14px;
       padding: 27px;
-      border: 1px solid rgba(255,255,255,.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: var(--radius);
-      background: rgba(255,255,255,.04);
+      background: rgba(255, 255, 255, 0.04);
     }
-
     .form-row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 14px;
     }
-
     input,
     textarea {
       width: 100%;
       padding: 14px 16px;
-      border: 1px solid rgba(255,255,255,.14);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 13px;
       outline: none;
       color: white;
-      background: rgba(255,255,255,.06);
+      background: rgba(255, 255, 255, 0.06);
     }
-
     input::placeholder,
     textarea::placeholder {
-      color: rgba(255,255,255,.58);
+      color: rgba(255, 255, 255, 0.58);
     }
-
     textarea {
       min-height: 130px;
       resize: vertical;
@@ -542,10 +479,10 @@
 
     footer {
       padding: 22px 0;
-      color: rgba(255,255,255,.7);
+      color: rgba(255, 255, 255, 0.7);
       background: #120f0d;
       text-align: center;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 900px) {
@@ -553,7 +490,6 @@
       .product-layout {
         grid-template-columns: 1fr;
       }
-
       .grid-3,
       .info-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -564,25 +500,20 @@
       .container {
         width: min(100% - 22px, 1180px);
       }
-
       .navigation-content {
         gap: 12px;
         padding: 12px 0;
       }
-
       .navigation a {
-        font-size: .78rem;
+        font-size: 0.78rem;
       }
-
       .section {
         padding: 70px 0;
       }
-
       .buttons,
       .buttons .btn {
         width: 100%;
       }
-
       .grid-3,
       .gallery,
       .info-grid,
@@ -590,33 +521,40 @@
       .form-row {
         grid-template-columns: 1fr;
       }
-
       .card,
       .info-box,
       .contact-form {
         padding: 24px 20px;
       }
-
       .contact-item {
         flex-direction: column;
         gap: 4px;
       }
-
       .contact-label {
         min-width: auto;
+      }
+      .topbar-content,
+      .topbar-links {
+        justify-content: center;
+        text-align: center;
       }
     }
   </style>
 </head>
 
 <body>
-
   <div class="topbar">
     <div class="container topbar-content">
       <span>Elegância, conforto e tecnologia para o seu ambiente</span>
-      <a href="https://wa.me/5511994395484" target="_blank" rel="noopener">
-        WhatsApp: (11) 99439-5484
-      </a>
+
+      <div class="topbar-links">
+        <a href="https://wa.me/5511994395484" target="_blank" rel="noopener noreferrer">
+          WhatsApp: (11) 99439-5484
+        </a>
+        <a href="https://www.instagram.com/arbensolucoes/" target="_blank" rel="noopener noreferrer">
+          Instagram: @arbensolucoes
+        </a>
+      </div>
     </div>
   </div>
 
@@ -627,7 +565,7 @@
           src="assets/logo-arben.png"
           alt="Arben Soluções - Soluções para interiores"
           class="logo-arben"
-        >
+        />
       </a>
     </div>
   </header>
@@ -641,38 +579,32 @@
       <a href="#persianas">Persianas</a>
       <a href="#papel-parede">Papel de parede</a>
       <a href="#contato">Contato</a>
+      <a href="https://www.instagram.com/arbensolucoes/" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
     </div>
   </nav>
 
   <main id="inicio">
-
     <section class="hero">
       <div class="container">
         <div class="hero-content">
           <span class="hero-label">Arben Soluções</span>
-
-          <h1>
-            Ambientes sofisticados, confortáveis e personalizados.
-          </h1>
-
+          <h1>Ambientes sofisticados, confortáveis e personalizados.</h1>
           <p>
-            Soluções sob medida em cortinas, persianas, automação,
-            papel de parede, piso vinílico e toldos.
+            Soluções sob medida em cortinas, persianas, automação, papel de parede,
+            piso vinílico e toldos.
           </p>
-
           <div class="buttons">
             <a
               class="btn"
               href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               Solicitar orçamento
             </a>
-
-            <a class="btn btn-outline" href="#servicos">
-              Conheça nossos serviços
-            </a>
+            <a class="btn btn-outline" href="#servicos">Conheça nossos serviços</a>
           </div>
         </div>
       </div>
@@ -684,9 +616,9 @@
           <small>Sobre a Arben</small>
           <h2>Elegância, conforto e tecnologia para o seu ambiente.</h2>
           <p>
-            A Arben Soluções nasceu da experiência no mercado de decoração e
-            proteção solar. Desenvolvemos projetos personalizados para residências,
-            apartamentos de alto padrão, clínicas e escritórios.
+            A Arben Soluções nasceu da experiência no mercado de decoração e proteção solar.
+            Desenvolvemos projetos personalizados para residências, apartamentos de alto padrão,
+            clínicas e escritórios.
           </p>
         </div>
 
@@ -694,9 +626,8 @@
           <article class="card">
             <h3>Projetos sob medida com acabamento impecável.</h3>
             <p>
-              Aliamos materiais de primeira linha, atendimento consultivo e
-              instalação especializada para entregar soluções bonitas, funcionais
-              e duráveis.
+              Aliamos materiais de primeira linha, atendimento consultivo e instalação especializada
+              para entregar soluções belas, funcionais e duráveis.
             </p>
 
             <div class="stats">
@@ -704,12 +635,10 @@
                 <strong>100%</strong>
                 <span>Sob medida</span>
               </div>
-
               <div class="stat">
                 <strong>Premium</strong>
                 <span>Alto padrão</span>
               </div>
-
               <div class="stat">
                 <strong>SP</strong>
                 <span>Grande São Paulo</span>
@@ -720,12 +649,12 @@
           <article class="card">
             <h3>O detalhe que faz toda a diferença.</h3>
             <p>
-              Da escolha do produto à instalação, cada etapa é planejada para
-              valorizar a arquitetura e refletir o estilo de cada cliente.
+              Da escolha do produto à instalação, cada etapa é planejada para valorizar a arquitetura
+              e refletir o estilo de cada cliente.
             </p>
             <p>
-              Nosso compromisso é oferecer qualidade, conforto, praticidade e
-              atendimento próximo em todos os projetos.
+              Nosso compromisso é oferecer qualidade, conforto, praticidade e atendimento próximo
+              em todos os projetos.
             </p>
           </article>
         </div>
@@ -744,8 +673,8 @@
             <div class="service-icon">🪟</div>
             <h3>Cortinas sob medida</h3>
             <p>
-              Tecidos, modelagens e acabamentos personalizados para trazer
-              sofisticação, aconchego e controle de luminosidade.
+              Tecidos, modelagens e acabamentos personalizados para trazer sofisticação,
+              aconchego e controle de luminosidade.
             </p>
           </article>
 
@@ -753,8 +682,7 @@
             <div class="service-icon">▤</div>
             <h3>Persianas e cortinas rolô</h3>
             <p>
-              Modelos Rolô, Tela Solar, Blackout, Double Vision e persianas
-              horizontais para todos os ambientes.
+              Modelos Rolô, Tela Solar, Blackout, Double Vision e persianas horizontais para todos os ambientes.
             </p>
           </article>
 
@@ -762,8 +690,7 @@
             <div class="service-icon">☀</div>
             <h3>Toldos</h3>
             <p>
-              Proteção solar e conforto para varandas, áreas gourmet, sacadas
-              e espaços externos.
+              Proteção solar e conforto para varandas, áreas gourmet, sacadas e espaços externos.
             </p>
           </article>
 
@@ -771,8 +698,7 @@
             <div class="service-icon">⚙</div>
             <h3>Automação</h3>
             <p>
-              Motores para cortinas e persianas com controle remoto, aplicativo
-              e comandos de voz.
+              Motores para cortinas e persianas com controle remoto, aplicativo e comandos de voz.
             </p>
           </article>
 
@@ -780,8 +706,7 @@
             <div class="service-icon">▧</div>
             <h3>Papel de parede</h3>
             <p>
-              Texturas, estampas e relevos de alto padrão para transformar
-              quartos, salas, lavabos e escritórios.
+              Texturas, estampas e relevos de alto padrão para transformar quartos, salas e escritórios.
             </p>
           </article>
 
@@ -789,8 +714,7 @@
             <div class="service-icon">⌂</div>
             <h3>Piso vinílico</h3>
             <p>
-              Revestimentos confortáveis, resistentes e modernos para projetos
-              residenciais e corporativos.
+              Revestimentos confortáveis, resistentes e modernos para projetos residenciais e corporativos.
             </p>
           </article>
         </div>
@@ -801,7 +725,7 @@
       <div class="container">
         <div class="heading">
           <small>Cortinas sob medida</small>
-          <h2>Cortinas de Alto Padrão Sob Medida</h2>
+          <h2>Cortinas de alto padrão sob medida</h2>
         </div>
 
         <div class="intro">
@@ -810,27 +734,22 @@
             Elas não apenas vestem as janelas, mas transformam a atmosfera do ambiente,
             trazendo aconchego, sofisticação e controle térmico.
           </p>
-
           <p>
-            Nossas cortinas são confeccionadas de forma 100% personalizada,
-            garantindo caimento perfeito e harmonia com o seu projeto de interiores.
+            Nossas cortinas são confeccionadas de forma 100% personalizada, garantindo
+            caimento perfeito e harmonia com o seu projeto de interiores.
           </p>
         </div>
 
         <div class="product-layout">
           <div class="product-image">
-            <img
-              src="assets/cortinas-sala.jpg"
-              alt="Sala de alto padrão com cortinas sob medida"
-              loading="lazy"
-            >
+            <img src="assets/cortinas-sala.jpg" alt="Sala de alto padrão com cortinas sob medida" loading="lazy" />
           </div>
 
           <div class="product-copy">
             <h3>Elegância que transforma o ambiente</h3>
             <p>
-              Cada cortina é projetada para valorizar a arquitetura, equilibrar
-              a entrada de luz e proporcionar mais conforto.
+              Cada cortina é projetada para valorizar a arquitetura, equilibrar a entrada
+              de luz e proporcionar mais conforto.
             </p>
 
             <ul class="feature-list">
@@ -838,20 +757,17 @@
                 <strong>Curadoria de tecidos</strong>
                 <span>Voil, linho, blackout e corta-luz.</span>
               </li>
-
               <li>
                 <strong>Acabamentos impecáveis</strong>
                 <span>Prega Wave, Prega Macho, Americana e Franzida.</span>
               </li>
-
               <li>
                 <strong>Tecnologia e automação</strong>
                 <span>Trilhos motorizados com controle remoto, aplicativo ou voz.</span>
               </li>
-
               <li>
                 <strong>Instalação especializada</strong>
-                <span>Equipe própria, instalação limpa e milimetricamente ajustada.</span>
+                <span>Equipe própria, instalação limpa e ajustada com precisão.</span>
               </li>
             </ul>
           </div>
@@ -859,7 +775,7 @@
 
         <div class="gallery">
           <article class="gallery-card">
-            <img src="assets/cortinas-dormitorio.jpg" alt="Dormitório com cortinas" loading="lazy">
+            <img src="assets/cortinas-dormitorio.jpg" alt="Dormitório com cortinas" loading="lazy" />
             <div>
               <h3>Dormitórios sofisticados</h3>
               <p>Combinações de tecidos leves com blackout.</p>
@@ -867,7 +783,7 @@
           </article>
 
           <article class="gallery-card">
-            <img src="assets/cortinas-wave.jpg" alt="Cortina com prega Wave" loading="lazy">
+            <img src="assets/cortinas-wave.jpg" alt="Cortina com prega Wave" loading="lazy" />
             <div>
               <h3>Acabamento Prega Wave</h3>
               <p>Onda perfeita e caimento uniforme.</p>
@@ -875,7 +791,7 @@
           </article>
 
           <article class="gallery-card">
-            <img src="assets/cortinas-sala.jpg" alt="Sala com cortinas sob medida" loading="lazy">
+            <img src="assets/cortinas-sala.jpg" alt="Sala com cortinas sob medida" loading="lazy" />
             <div>
               <h3>Salas elegantes</h3>
               <p>Controle suave da luz natural e mais conforto.</p>
@@ -885,18 +801,15 @@
 
         <div class="info-box">
           <h3>Onde aplicamos</h3>
-
           <div class="info-grid">
             <div class="info-item">
               <h4>Salas de estar e jantar</h4>
               <p>Visual elegante e controle da luz natural.</p>
             </div>
-
             <div class="info-item">
               <h4>Dormitórios</h4>
               <p>Conforto, privacidade e noites mais tranquilas.</p>
             </div>
-
             <div class="info-item">
               <h4>Clínicas e escritórios</h4>
               <p>Credibilidade, conforto e sofisticação.</p>
@@ -909,7 +822,7 @@
             class="btn"
             href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20cortinas."
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Orçar cortinas
           </a>
@@ -926,31 +839,25 @@
 
         <div class="intro">
           <p>
-            As persianas e cortinas rolô da Arben Soluções unem estética
-            contemporânea à eficiência no controle de luminosidade e proteção térmica.
+            As persianas e cortinas rolô da Arben Soluções unem estética contemporânea à eficiência
+            no controle de luminosidade e proteção térmica.
           </p>
-
           <p>
-            Fabricadas sob medida, garantem encaixe perfeito, componentes de alta
-            durabilidade e acabamento de alto padrão.
+            Fabricadas sob medida, garantem encaixe perfeito, componentes de alta durabilidade
+            e acabamento de alto padrão.
           </p>
         </div>
 
         <div class="product-layout">
           <div class="product-image">
-            <img
-              src="assets/persiana-rolo-1.jpg"
-              alt="Cortina rolô em ambiente moderno"
-              loading="lazy"
-            >
+            <img src="assets/persiana-rolo-1.jpg" alt="Cortina rolô em ambiente moderno" loading="lazy" />
           </div>
 
           <div class="product-copy">
             <h3>Cortinas Rolô</h3>
-
             <p>
-              Com design minimalista, a cortina rolô se recolhe de forma compacta
-              e libera totalmente o vão quando aberta.
+              Com design minimalista, a cortina rolô se recolhe de forma compacta e libera
+              totalmente o vão quando aberta.
             </p>
 
             <ul class="feature-list">
@@ -958,12 +865,10 @@
                 <strong>Rolô Tela Solar</strong>
                 <span>Filtra raios UV, reduz o calor e preserva a visão externa.</span>
               </li>
-
               <li>
                 <strong>Rolô Blackout</strong>
                 <span>Bloqueia a luz externa e oferece privacidade total.</span>
               </li>
-
               <li>
                 <strong>Double Vision — Zebra</strong>
                 <span>Alterna faixas translúcidas e opacas para controlar a luz.</span>
@@ -974,7 +879,7 @@
 
         <div class="gallery">
           <article class="gallery-card">
-            <img src="assets/persiana-rolo-2.jpg" alt="Persianas rolô em escritório" loading="lazy">
+            <img src="assets/persiana-rolo-2.jpg" alt="Persianas rolô em escritório" loading="lazy" />
             <div>
               <h3>Ambientes corporativos</h3>
               <p>Conforto térmico e visual contemporâneo.</p>
@@ -982,7 +887,7 @@
           </article>
 
           <article class="gallery-card">
-            <img src="assets/persiana-horizontal.jpg" alt="Persiana horizontal de madeira" loading="lazy">
+            <img src="assets/persiana-horizontal.jpg" alt="Persiana horizontal de madeira" loading="lazy" />
             <div>
               <h3>Persianas horizontais</h3>
               <p>Controle direcional de luz e ventilação.</p>
@@ -990,7 +895,7 @@
           </article>
 
           <article class="gallery-card">
-            <img src="assets/persiana-rolo-1.jpg" alt="Persiana rolô sob medida" loading="lazy">
+            <img src="assets/persiana-rolo-1.jpg" alt="Persiana rolô sob medida" loading="lazy" />
             <div>
               <h3>Soluções sob medida</h3>
               <p>Praticidade, beleza e durabilidade.</p>
@@ -1004,23 +909,15 @@
           <div class="info-grid">
             <div class="info-item">
               <h4>Alumínio</h4>
-              <p>
-                Opções de 16 mm, 25 mm e 50 mm. Resistentes à umidade e fáceis de limpar.
-              </p>
+              <p>Opções de 16 mm, 25 mm e 50 mm. Resistentes à umidade e fáceis de limpar.</p>
             </div>
-
             <div class="info-item">
               <h4>Madeira</h4>
-              <p>
-                Aconchego, textura e nobreza para salas, quartos e escritórios.
-              </p>
+              <p>Aconchego, textura e nobreza para salas, quartos e escritórios.</p>
             </div>
-
             <div class="info-item">
               <h4>Ecowood e PVC</h4>
-              <p>
-                Alta durabilidade, acabamento sofisticado e fácil manutenção.
-              </p>
+              <p>Alta durabilidade, acabamento sofisticado e fácil manutenção.</p>
             </div>
           </div>
         </div>
@@ -1030,7 +927,7 @@
             class="btn"
             href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20persianas."
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Orçar persianas
           </a>
@@ -1047,33 +944,28 @@
 
         <div class="intro">
           <p>
-            As paredes são as maiores telas do seu ambiente. O papel de parede
-            renova completamente o espaço de forma rápida, limpa e com grande
-            impacto visual.
+            Na Arben Soluções, sabemos que as paredes são as maiores telas do seu ambiente.
+            O papel de parede é a ferramenta perfeita para renovar completamente um espaço
+            de forma rápida, limpa e com impacto visual surpreendente.
           </p>
-
           <p>
-            Trabalhamos com texturas, estampas e relevos que vão do clássico ao
-            contemporâneo, para quartos, salas, lavabos e ambientes corporativos.
+            Trabalhamos com catálogos de alto padrão, oferecendo texturas, estampas e relevos
+            que vão do clássico ao super contemporâneo, ideais para quartos, salas, lavabos
+            e ambientes corporativos.
           </p>
         </div>
 
         <div class="product-layout">
           <div class="product-image">
-            <img
-              src="assets/papel-parede-folhagem.jpg"
-              alt="Papel de parede estampado em sala de jantar"
-              loading="lazy"
-            >
+            <img src="assets/papel-parede-folhagem.jpg" alt="Papel de parede estampado em sala de jantar" loading="lazy" />
           </div>
 
           <div class="product-copy">
             <h3>Qualidade superior e marcas renomadas</h3>
-
             <p>
-              Oferecemos papéis vinílicos, laváveis, importados e nacionais,
-              selecionados para garantir durabilidade, cores vivas e facilidade
-              de manutenção.
+              Para garantir durabilidade, cores vivas e facilidade de manutenção, incluindo
+              opções vinílicas e laváveis, selecionamos fornecedores e importadores extremamente
+              respeitados no mercado.
             </p>
 
             <ul class="feature-list">
@@ -1081,20 +973,17 @@
                 <strong>Bucalo</strong>
                 <span>Luxo, exclusividade e tendências internacionais.</span>
               </li>
-
               <li>
                 <strong>Kantai</strong>
                 <span>Revestimentos importados com acabamentos sofisticados.</span>
               </li>
-
               <li>
                 <strong>Muresco</strong>
-                <span>Tradição, resistência e grande variedade de estampas.</span>
+                <span>Tradição e alta qualidade em papéis vinílicos.</span>
               </li>
-
               <li>
                 <strong>Bobinex</strong>
-                <span>Variedade, tradição brasileira e excelente custo-benefício.</span>
+                <span>Variedade, tradição e excelente custo-benefício.</span>
               </li>
             </ul>
           </div>
@@ -1102,53 +991,45 @@
 
         <div class="gallery">
           <article class="gallery-card">
-            <img src="assets/papel-parede-quarto.jpg" alt="Quarto com papel de parede" loading="lazy">
+            <img src="assets/papel-parede-quarto.jpg" alt="Quarto com papel de parede" loading="lazy" />
             <div>
               <h3>Quartos acolhedores</h3>
-              <p>Texturas que criam conforto e personalidade.</p>
+              <p>Texturas e estampas que criam uma atmosfera elegante e confortável.</p>
             </div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/papel-parede-sala.jpg" alt="Sala com papel de parede" loading="lazy">
+            <img src="assets/papel-parede-sala.jpg" alt="Sala com papel de parede decorativo" loading="lazy" />
             <div>
-              <h3>Salas sofisticadas</h3>
-              <p>Revestimentos que valorizam a decoração.</p>
+              <h3>Salas com personalidade</h3>
+              <p>Revestimentos que valorizam a decoração e transformam o ambiente.</p>
             </div>
           </article>
 
           <article class="gallery-card">
-            <img src="assets/papel-parede-geometrico.jpg" alt="Papel de parede geométrico" loading="lazy">
+            <img src="assets/papel-parede-geometrico.jpg" alt="Ambiente corporativo com papel de parede geométrico" loading="lazy" />
             <div>
               <h3>Projetos contemporâneos</h3>
-              <p>Padrões modernos para ambientes residenciais e comerciais.</p>
+              <p>Padrões geométricos e acabamentos modernos para projetos residenciais e corporativos.</p>
             </div>
           </article>
         </div>
 
         <div class="info-box">
-          <h3>O Padrão Arben: venda com instalação inclusa</h3>
+          <h3>O padrão Arben: venda com instalação inclusa</h3>
 
           <div class="info-grid">
             <div class="info-item">
-              <h4>Rapport perfeito</h4>
-              <p>
-                Continuidade dos desenhos sem emendas visíveis.
-              </p>
+              <h4>Casamento perfeito de estampas</h4>
+              <p>Garantimos a continuidade dos desenhos sem emendas visíveis.</p>
             </div>
-
             <div class="info-item">
               <h4>Acabamento sem falhas</h4>
-              <p>
-                Preparação adequada e aplicação sem bolhas ou descolamentos.
-              </p>
+              <p>Preparação adequada, cola correta e aplicação impecável.</p>
             </div>
-
             <div class="info-item">
               <h4>Comodidade total</h4>
-              <p>
-                Levamos os catálogos, calculamos os rolos e instalamos com limpeza.
-              </p>
+              <p>Levamos catálogos até você e executamos a aplicação com rapidez e limpeza.</p>
             </div>
           </div>
         </div>
@@ -1158,9 +1039,9 @@
             class="btn"
             href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20conhecer%20os%20papéis%20de%20parede."
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
-            Conhecer papéis de parede
+            Agendar visita para papel de parede
           </a>
         </div>
       </div>
@@ -1175,31 +1056,28 @@
 
         <div class="product-layout">
           <div class="product-image">
-            <img src="assets/automacao.jpg" alt="Automação de cortinas e persianas" loading="lazy">
+            <img src="assets/automacao.jpg" alt="Automação de cortinas e persianas" loading="lazy" />
           </div>
 
           <div class="product-copy">
             <h3>Mais conforto com um simples toque</h3>
-
             <p>
-              Instale motores para cortinas e persianas e controle a abertura e o
-              fechamento por controle remoto, smartphone ou comandos de voz.
+              Instale motores para cortinas e persianas e controle a abertura e o fechamento por
+              controle remoto, smartphone ou comandos de voz.
             </p>
 
             <ul class="feature-list">
               <li>
                 <strong>Controle total</strong>
-                <span>Acione os produtos de qualquer lugar do ambiente.</span>
+                <span>Ative os produtos com praticidade em qualquer ambiente.</span>
               </li>
-
               <li>
                 <strong>Integração inteligente</strong>
                 <span>Compatibilidade com sistemas de automação residencial.</span>
               </li>
-
               <li>
                 <strong>Conforto térmico</strong>
-                <span>Controle a entrada de luz e o conforto do ambiente.</span>
+                <span>Controle a entrada de luz e a temperatura do ambiente.</span>
               </li>
             </ul>
           </div>
@@ -1210,7 +1088,7 @@
             class="btn"
             href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20automação."
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Orçar automação
           </a>
@@ -1228,11 +1106,9 @@
         <div class="product-layout">
           <div class="product-copy">
             <h3>Mais aproveitamento para o seu espaço</h3>
-
             <p>
-              Os toldos da Arben Soluções protegem contra o excesso de sol,
-              ajudam no conforto térmico e valorizam varandas, sacadas, áreas
-              gourmet e ambientes comerciais.
+              Os toldos da Arben Soluções protegem contra o excesso de sol, ajudam no conforto térmico
+              e valorizam varandas, sacadas, áreas gourmet e ambientes comerciais.
             </p>
 
             <ul class="feature-list">
@@ -1240,12 +1116,10 @@
                 <strong>Alta durabilidade</strong>
                 <span>Materiais resistentes para uso externo.</span>
               </li>
-
               <li>
                 <strong>Proteção solar</strong>
                 <span>Redução da incidência direta de sol e calor.</span>
               </li>
-
               <li>
                 <strong>Projeto personalizado</strong>
                 <span>Soluções adequadas à arquitetura do ambiente.</span>
@@ -1254,7 +1128,7 @@
           </div>
 
           <div class="product-image">
-            <img src="assets/toldos.jpg" alt="Toldo para área externa" loading="lazy">
+            <img src="assets/toldos.jpg" alt="Toldo para área externa" loading="lazy" />
           </div>
         </div>
 
@@ -1263,7 +1137,7 @@
             class="btn"
             href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20toldos."
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Orçar toldos
           </a>
@@ -1280,15 +1154,14 @@
 
         <div class="product-layout">
           <div class="product-image">
-            <img src="assets/piso-vinilico.jpg" alt="Piso vinílico em ambiente moderno" loading="lazy">
+            <img src="assets/piso-vinilico.jpg" alt="Piso vinílico em ambiente moderno" loading="lazy" />
           </div>
 
           <div class="product-copy">
             <h3>Um acabamento elegante e acolhedor</h3>
-
             <p>
-              O piso vinílico é uma excelente escolha para quem procura conforto
-              térmico, redução acústica, praticidade e visual sofisticado.
+              O piso vinílico é uma excelente escolha para quem procura conforto térmico,
+              redução acústica, praticidade e visual sofisticado.
             </p>
 
             <ul class="feature-list">
@@ -1296,12 +1169,10 @@
                 <strong>Conforto térmico e acústico</strong>
                 <span>Mais aconchego e menor propagação de ruídos.</span>
               </li>
-
               <li>
                 <strong>Fácil manutenção</strong>
                 <span>Praticidade para a rotina residencial e corporativa.</span>
               </li>
-
               <li>
                 <strong>Variedade de acabamentos</strong>
                 <span>Opções que reproduzem madeira e outros estilos.</span>
@@ -1315,7 +1186,7 @@
             class="btn"
             href="https://wa.me/5511994395484?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20piso%20vinílico."
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Orçar piso vinílico
           </a>
@@ -1329,8 +1200,7 @@
           <small>Serviços especializados</small>
           <h2>Instalação, manutenção e higienização.</h2>
           <p>
-            Nossa equipe própria cuida de cada etapa para garantir um resultado
-            bonito, seguro e duradouro.
+            Nossa equipe própria cuida de cada etapa para garantir um resultado bonito, seguro e duradouro.
           </p>
         </div>
 
@@ -1367,11 +1237,11 @@
         <div class="grid-2">
           <div>
             <div class="heading">
-              <small style="color:#e6c98f;">Contato e atendimento</small>
+              <small style="color: #e6c98f;">Contato e atendimento</small>
               <h2>Pronto para transformar o seu ambiente?</h2>
               <p class="contact-text">
-                Fale com a equipe Arben Soluções para tirar dúvidas,
-                agendar uma visita ou solicitar um orçamento.
+                Fale com a equipe Arben Soluções para tirar dúvidas, agendar uma visita ou
+                solicitar um orçamento personalizado.
               </p>
             </div>
 
@@ -1382,8 +1252,15 @@
 
             <div class="contact-item">
               <div class="contact-label">WhatsApp</div>
-              <a href="https://wa.me/5511994395484" target="_blank" rel="noopener">
+              <a href="https://wa.me/5511994395484" target="_blank" rel="noopener noreferrer">
                 (11) 99439-5484
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Instagram</div>
+              <a href="https://www.instagram.com/arbensolucoes/" target="_blank" rel="noopener noreferrer">
+                @arbensolucoes
               </a>
             </div>
 
@@ -1391,56 +1268,40 @@
               <div class="contact-label">E-mails</div>
 
               <div class="emails">
-                <a href="mailto:contato@arbensolucoes.com.br">
-                  contato@arbensolucoes.com.br
-                </a>
-
-                <a href="mailto:vendas@arbensolucoes.com.br">
-                  vendas@arbensolucoes.com.br
-                </a>
-
-                <a href="mailto:financeiro@arbensolucoes.com.br">
-                  financeiro@arbensolucoes.com.br
-                </a>
+                <a href="mailto:contato@arbensolucoes.com.br">contato@arbensolucoes.com.br</a>
+                <a href="mailto:vendas@arbensolucoes.com.br">vendas@arbensolucoes.com.br</a>
+                <a href="mailto:financeiro@arbensolucoes.com.br">financeiro@arbensolucoes.com.br</a>
               </div>
             </div>
           </div>
 
           <form class="contact-form" id="contactForm">
             <div class="form-row">
-              <input id="nome" type="text" placeholder="Seu nome" required>
-              <input id="telefone" type="tel" placeholder="Seu WhatsApp" required>
+              <input id="nome" type="text" placeholder="Seu nome" required />
+              <input id="telefone" type="tel" placeholder="Seu WhatsApp" required />
             </div>
 
-            <input id="assunto" type="text" placeholder="Assunto">
+            <input id="assunto" type="text" placeholder="Assunto" />
 
-            <textarea
-              id="mensagem"
-              placeholder="Descreva o que você precisa..."
-              required
-            ></textarea>
+            <textarea id="mensagem" placeholder="Descreva o que você precisa..." required></textarea>
 
-            <button class="btn" type="submit">
-              Enviar pelo WhatsApp
-            </button>
+            <button class="btn" type="submit">Enviar pelo WhatsApp</button>
           </form>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
     <div class="container">
-      © <span id="year"></span> Arben Soluções —
-      O detalhe que faz toda a diferença no seu projeto.
+      © <span id="year"></span> Arben Soluções — O detalhe que faz toda a diferença no seu projeto.
     </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
       event.preventDefault();
 
       const nome = document.getElementById("nome").value.trim();
@@ -1457,13 +1318,9 @@
         `Mensagem: ${mensagem}`
       ].filter(Boolean).join("\n");
 
-      const url =
-        "https://wa.me/5511994395484?text=" +
-        encodeURIComponent(texto);
-
+      const url = "https://wa.me/5511994395484?text=" + encodeURIComponent(texto);
       window.open(url, "_blank", "noopener");
     });
   </script>
-
 </body>
 </html>
